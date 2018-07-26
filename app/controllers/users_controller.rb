@@ -2,7 +2,6 @@ class UsersController < ApplicationController
 
   def create
     User.find_or_create_by(user_params)
-    binding.pry
   end
 
   private
