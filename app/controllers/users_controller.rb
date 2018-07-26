@@ -1,11 +1,12 @@
 class UsersController < ApplicationController
 
   def create
-    User.new(user_params).save
+    user = User.new(user_params).save
+    redirect_to user_path(user)
   end
 
-  def show 
-  end 
+  def show
+  end
 
   private
 
