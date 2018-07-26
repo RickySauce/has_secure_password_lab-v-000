@@ -4,6 +4,9 @@ class UsersController < ApplicationController
     User.new(user_params).save
   end
 
+  def show 
+  end 
+
   private
 
   def user_params
